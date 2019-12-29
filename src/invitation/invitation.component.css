@@ -1,0 +1,120 @@
+.invitation{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid !important;
+    border-radius: 12px;
+    border-width: 1px !important;
+    border-color: lightgray;
+}
+.request{
+    display: flex;
+    justify-content: center;
+    font-family: bedoni-italic !important;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.sheltonwelder-header {
+    display: flex;
+    justify-content: center;    
+    font-family: bedoni !important;
+    font-size: 34px;
+    text-shadow: -1px 1px #ff0000;
+}
+.tie-knot {
+    display: flex;
+    justify-content: center; 
+    font-family: mellony !important;    
+    font-size: 20px !important;
+}
+
+.rsvp{
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+    justify-content: center; 
+    font-family: bedoni-italic;
+    font-size:15px;
+}
+.rsvp input{
+    width:200px;
+    height: 30px;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.rsvp-button{
+    border: solid;
+    border-color: lightgray;
+    display: flex;
+    justify-content: center; 
+    width: 150px;
+    transform: background-color .5s;
+    border-radius: 12px;
+    height: 30px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+
+
+.rsvp-button:hover{
+    background-color: orange;
+    color: white;
+}
+
+.love-bow{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+
+}
+.love-bow hr{
+    width:89%;
+}
+
+.date{
+    display: flex;
+    justify-content: center; 
+    font-family: bedoni;
+    font-size:50px;
+}
+
+.home-title{
+    display: flex;
+    justify-content: center; 
+    font-family: bedoni-italic;
+    font-style: italic;
+    font-size:20px;
+}
+
+.address{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    font-family: bedoni-italic;
+    font-size:16px;
+    cursor: pointer;
+}
+
+.address:hover .address1 {
+    color: lightskyblue !important;
+    text-decoration: underline !important;
+
+}
+
+.address span{
+    display: flex;
+    justify-content: center; 
+}
+
+.food{
+    display: flex;
+    justify-content: center; 
+    font-family: bedoni-italic;
+    font-size:14px; 
+    font-style: italic;
+}
