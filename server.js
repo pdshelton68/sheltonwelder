@@ -28,7 +28,7 @@ app.get('/*', function(req, res) {
 
 app.listen(process.env.PORT || 8080);
 
-setInterval(function() {
-  http.get("https://sheltonwelder.herokuapp.com/");
-}, 300000); // every 5 minutes (300000)
+// setInterval(function() {
+//   http.get("https://sheltonwelder.herokuapp.com/");
+// }, 300000); // every 5 minutes (300000)
 

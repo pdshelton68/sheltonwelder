@@ -22,7 +22,7 @@
     border: solid !important;
     border-radius: 12px;
     border-width: 1px !important;
-    border-color: lightgray;
+    border-color: #F49B71 !important;
 }
 .request{
     display: flex;
@@ -37,7 +37,8 @@
     display: flex;
     justify-content: center;    
     font-family: lato !important;
-    font-size: 34px;
+    font-size: 38px;
+    letter-spacing: 5px;
     text-shadow: -1px 1px #F49B71;
 }
 .tie-knot {
@@ -81,7 +82,7 @@
 
     background-repeat:no-repeat;
     background-position: center; 
-    background-size:80%;
+    background-size:85%;
     width:100%;
     background-image: url('../../images/realdeal.png');
     height: 60px;
