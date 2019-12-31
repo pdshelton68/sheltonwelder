@@ -1,5 +1,5 @@
 const express = require('express');
-var path = require('path');
+var path = require('path'); //otherwise it blows up if the page is refreshed. Why?
 const app = express();
 // If an incoming request uses
 // a protocol other than HTTPS,
@@ -27,4 +27,8 @@ app.get('/*', function(req, res) {
   });
 
 app.listen(process.env.PORT || 8080);
+
+setInterval(function() {
+  http.get("https://sheltonwelder.herokuapp.com/");
+}, 300000); // every 5 minutes (300000)
 
