@@ -1,5 +1,5 @@
 .main{
-    display:flex;justify-content:center;flex-direction:column;width:100%!important;height:100% !important;border: solid;align-content: center;align-items: center;
+    display:flex;justify-content:center;flex-direction:column;width:100%!important;height:100% !important;align-content: center;align-items: center;
     font-family: lato;
 }
 .rsvp{
