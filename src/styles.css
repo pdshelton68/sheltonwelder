@@ -13,10 +13,31 @@
     src: url('../fonts/mellonydrybrush.ttf');
   }
 
+  @font-face {
+    font-family: lato;
+    src: url('../fonts/Lato-Regular.ttf');
+  }
 
+  @font-face {
+    font-family: lato-thin-italic;
+    src: url('../fonts/Lato-ThinItalic.ttf');
+  }
+
+  @font-face {
+    font-family: lato-semibold-italic;
+    src: url('../fonts/Lato-SemiboldItalic.ttf');
+  }
+  
+  @font-face {
+    font-family: lato-semibold;
+    src: url('../fonts/Lato-Semibold.ttf');
+  }
+  
+  
   *{
     box-sizing: border-box;
-
+    margin: 0;
+    padding: 0;
   }
   html{
 
@@ -24,7 +45,6 @@
     height: 100%;
   }
   body{
-
 
     width: 100%;
     height: 100%;

@@ -1,9 +1,24 @@
+.main{
+    display:flex;justify-content:center;flex-direction:column;width:100%!important;height:100% !important;align-content: center;align-items: center;
+
+}
+
+.sheltonwelder-names{
+    font-size: 10px;
+    text-align: center;
+    color:gray;
+    width: 100%;
+    font-family: lato;
+    font-style: italic;
+}
+
 .invitation{
-    height: 500px;
+    /* height: 480px; */
     width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: stretch;
     border: solid !important;
     border-radius: 12px;
     border-width: 1px !important;
@@ -15,20 +30,21 @@
     font-family: bedoni-italic !important;
     font-style: italic;
     font-size: 14px;
+    margin-bottom: 3px;
 }
 
 .sheltonwelder-header {
     display: flex;
     justify-content: center;    
-    font-family: bedoni !important;
+    font-family: lato !important;
     font-size: 34px;
-    text-shadow: -1px 1px #ff0000;
+    text-shadow: -1px 1px #F49B71;
 }
 .tie-knot {
     display: flex;
     justify-content: center; 
     font-family: mellony !important;    
-    font-size: 20px !important;
+    font-size: 30px !important;
 }
 
 .rsvp{
@@ -48,6 +64,7 @@
 
 .rsvp-button{
     border: solid;
+    border-width: 1px;
     border-color: lightgray;
     display: flex;
     justify-content: center; 
@@ -55,32 +72,45 @@
     transform: background-color .5s;
     border-radius: 12px;
     height: 30px;
-    line-height: 25px;
+    line-height: 28px;
     cursor: pointer;
+    font-family: lato;  
 }
 
+.real-deal{
 
+    background-repeat:no-repeat;
+    background-position: center; 
+    background-size:80%;
+    width:100%;
+    background-image: url('../../images/realdeal.png');
+    height: 60px;
+}
 
 .rsvp-button:hover{
-    background-color: orange;
+    background-color:#F49B71;
     color: white;
 }
 
 .love-bow{
-    width: 100%;
-    display: flex;
-    justify-content: center; 
+    background-repeat:no-repeat;
+    background-position: center; 
+    background-size:90%;
+    width:100%;
+    background-image: url('../../images/bow.png');
+    height: 40px;
 
 }
 .love-bow hr{
     width:89%;
+    margin-top: 7px;
 }
 
 .date{
     display: flex;
     justify-content: center; 
-    font-family: bedoni;
-    font-size:50px;
+    font-family: lato;
+    font-size:40px;
 }
 
 .home-title{
@@ -88,16 +118,19 @@
     justify-content: center; 
     font-family: bedoni-italic;
     font-style: italic;
-    font-size:20px;
+    font-weight: bold;
+    font-size:21px;
+    margin-bottom: 5px;
 }
 
 .address{
     display: flex;
     justify-content: center; 
     flex-direction: column;
-    font-family: bedoni-italic;
-    font-size:16px;
+    font-family: lato;
+    font-size:14px;
     cursor: pointer;
+    margin-bottom: 8px;
 }
 
 .address:hover .address1 {
@@ -117,4 +150,20 @@
     font-family: bedoni-italic;
     font-size:14px; 
     font-style: italic;
+
+    background-repeat:no-repeat;
+    background-position: center; 
+    background-size:100%;
+    width:100%;
+    background-image: url('../../images/party.png');
+    height: 210px;
+    border-radius: 12px;
+}
+
+.food span{
+    margin-top: 15px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+
 }
