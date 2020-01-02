@@ -59,7 +59,8 @@
 }
 .rsvp input{
     width:200px;
-    height: 30px;
+    height: 35px;
+    font-size:18px;
     border-radius: 12px;
     margin-right: 10px;
 }
