@@ -16,4 +16,8 @@ export class InvitationMobileComponent implements OnInit {
     window.open(url);
 
   }
+  public openMap(){
+    window.open("https://goo.gl/maps/tRiYYQoCqC46dSNn9");
+
+  }
 }
