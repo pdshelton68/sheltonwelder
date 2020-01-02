@@ -1,0 +1,32 @@
+
+<div class="initializing" *ngIf="state == 'submit'">Working...</div>
+<div class="complete" *ngIf="state == 'complete'">
+  <div>Thanks!</div>
+  <div><em><a href="" routerLink="../invitation" routerLinkActive="true">Back</a></em></div>
+</div>
+<ng-container *ngIf="state == 'rsvp'">
+
+<div style="margin-left:20px;width:100%">
+  <div class="hello" style="margin-top:20px;">Hello!</div>
+  <div class="welcome">WE CAN'T WAIT TO SEE YOU!</div>
+  <div class="welcome" style="margin-bottom:18px">PLEASE RESPOND BY JANUARY 22ND, 2020</div>
+  <div class="welcome" style="margin-bottom:5px">
+    <span class="label">NAME:</span><input type="text" id="name" class="rsvp-input" [(ngModel)]="name" />
+  </div>
+  <div class="welcome" style="margin-bottom:10px"><span class="label"># OF GUESTS:</span><input type="number" id="num-guests" class="rsvp-input" style="width:50px" [(ngModel)]="numGuests" /></div>
+  <div class="yes-no" style="margin-bottom:10px;">
+    <span>
+      <input type="radio" [value]="1" default name="yup" [(ngModel)]="yesNo"> Yup I'll be there with bells on!
+    </span>
+    <span>
+      <input type="radio" [value]="0" name="yup" [(ngModel)]="yesNo"> Nope sorry I can't make it.
+    </span>
+  </div>
+  <div class="email"><span class="label">EMAIL:</span><span><input type="text" id="email" [(ngModel)]="email" class="rsvp-input" /></span></div>
+  <div class="control">
+    <div class="rsvp-button" (click)="onSendMail()" title="Please Complete Name and Email Fields" [class.disabled]="!validForm()">Submit</div>
+    <div class="rsvp-button" (click)="reset()">Reset</div>
+    <div class="rsvp-button" routerLink="../invitation" routerLinkActive="true">Back</div>
+  </div>
+</div>
+  </ng-container>

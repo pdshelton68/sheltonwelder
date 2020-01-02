@@ -1,0 +1,174 @@
+.main{
+    display:flex;justify-content:center;flex-direction:column;width:100%!important;height:100% !important;align-content: center;align-items: center;
+
+}
+
+.sheltonwelder-names{
+    font-size: 10px;
+    text-align: center;
+    color:gray;
+    width: 100%;
+    font-family: lato;
+    font-style: italic;
+}
+
+.invitation{
+    /* height: 480px; */
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    border: solid !important;
+    border-radius: 12px;
+    border-width: 1px !important;
+    border-color: #F49B71 !important;
+}
+.request{
+    display: flex;
+    justify-content: center;
+    font-family: bedoni-italic !important;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.sheltonwelder-header {
+    display: flex;
+    justify-content: center;    
+    font-family: lato !important;
+    font-size: 34px;
+    letter-spacing: 1px;
+    text-shadow: -1px 1px #F49B71;
+}
+.tie-knot {
+    display: flex;
+    justify-content: center; 
+    font-family: mellony !important;    
+    font-size: 30px !important;
+}
+
+.rsvp{
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+    justify-content: center; 
+    font-family: bedoni-italic;
+    font-size:15px;
+    margin-bottom: .76vh;
+}
+.rsvp input{
+    width:200px;
+    height: 30px;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.rsvp-button{
+    border: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    display: flex;
+    justify-content: center; 
+    width: 190px;
+    transform: background-color .5s;
+    border-radius: 12px;
+    height: 4.0vh;
+    line-height: 3.90vh;
+    cursor: pointer;
+    font-family: lato; 
+    font-size: 2.7vh; 
+
+}
+
+.real-deal{
+
+    background-repeat:no-repeat;
+    background-position: center; 
+    background-size:85%;
+    width:100%;
+    background-image: url('../../images/realdeal.png');
+    height: 60px;
+}
+
+.rsvp-button:hover{
+    background-color:#F49B71;
+    color: white;
+}
+
+.love-bow{
+    background-repeat:no-repeat;
+    background-position: center; 
+    background-size:90%;
+    width:100%;
+    background-image: url('../../images/bow.png');
+    height: 40px;
+
+}
+.love-bow hr{
+    width:89%;
+    margin-top: 7px;
+}
+
+.date{
+    display: flex;
+    justify-content: center; 
+    font-family: lato;
+    font-size:40px;
+}
+
+.home-title{
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    font-family: bedoni-italic;
+    font-style: italic;
+    font-weight: bold;
+    font-size:21px;
+    margin-bottom: 5px;
+}
+
+.address{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    font-family: lato;
+    font-size:14px;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.address:hover .address1 {
+    color: lightskyblue !important;
+    text-decoration: underline !important;
+
+}
+
+.address span{
+    display: flex;
+    justify-content: center; 
+}
+
+.food{
+    display: flex;
+    justify-content: center; 
+    font-family: bedoni-italic;
+    font-size:14px; 
+    font-style: italic;
+
+    background-repeat:no-repeat;
+    background-position: center; 
+    background-size:100%;
+    width:100%;
+    background-image: url('../../images/party.png');
+    height: 210px;
+    border-radius: 12px;
+}
+
+.food span{
+    margin-top: 15px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+
+}
