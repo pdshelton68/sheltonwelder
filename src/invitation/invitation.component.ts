@@ -16,5 +16,6 @@ export class InvitationComponent implements OnInit {
 
     console.log(this.deviceService);
   }
-
+  //registry link:
+//https://www.crateandbarrel.com/gift-registry/amanda-blackwelder-and-paul-shelton/r6071439
 }
