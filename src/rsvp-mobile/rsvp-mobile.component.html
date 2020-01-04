@@ -1,5 +1,7 @@
 
-<div class="initializing" *ngIf="state == 'submit'">Working...</div>
+<div class="initializing" *ngIf="state == 'submit'">
+  <span class="fas fa-spinner fa-spin" style="font-size:50px;margin-bottom:30px;"></span>
+</div>
 <div class="complete" *ngIf="state == 'complete'">
   <div>Thanks!</div>
   <div><em><a href="" routerLink="../invitation-m" routerLinkActive="true">Back</a></em></div>
