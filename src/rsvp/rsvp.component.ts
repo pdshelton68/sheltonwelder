@@ -3,22 +3,22 @@ import {} from 'node-mandrill'
 import { MailService } from '../services/mailservice';
 import { HttpClientModule } from '@angular/common/http';
 @Component({
-  selector: 'app-rsvp',
+  selector: 'rsvp',
   templateUrl: './rsvp.component.html',
   styleUrls: ['./rsvp.component.css']
 })
 export class RsvpComponent implements OnInit {
+  
   public yesNo:number= 1;
   public name: string ="";
   public numGuests:number = 2;
   public email:string = "";
-
+  public comments:string = "";
   public state:string = "rsvp";
 
   constructor(private service:MailService) { }
 
   ngOnInit() {
-    
   }
 
   public validForm():boolean{
@@ -29,7 +29,8 @@ export class RsvpComponent implements OnInit {
     if(!this.validForm()) return;
     
     this.state = "submit";
-    this.service.sendMail(this.email, this.yesNo > 0, "",this.numGuests, this.name).subscribe(data=>{
+    this.service.sendMail(this.email, this.yesNo > 0, 
+      this.comments,this.numGuests, this.name).subscribe(data=>{
       this.state = "complete";
       console.log("ok");
     })
@@ -39,6 +40,7 @@ export class RsvpComponent implements OnInit {
   public reset(){
     this.name = "";
     this.email = "";
+    this.comments = "";
     this.numGuests = 2;
     this.yesNo = 1;
   }

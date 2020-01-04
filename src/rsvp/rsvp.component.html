@@ -20,13 +20,17 @@
     <div class="welcome" style="margin-bottom:10px"><span class="label"># OF GUESTS:</span><input type="number" id="num-guests" class="rsvp-input" style="width:50px" [(ngModel)]="numGuests" /></div>
     <div class="yes-no" style="margin-bottom:10px;">
       <span>
-        <input type="radio" [value]="1" default name="yup" [(ngModel)]="yesNo"> Yup I'll be there with bells on!
+        <input type="radio" spellcheck="false" [value]="1" default name="yup" [(ngModel)]="yesNo"> Yup I'll be there with bells on!
       </span>
       <span>
-        <input type="radio" [value]="0" name="yup" [(ngModel)]="yesNo"> Nope sorry I can't make it.
+        <input type="radio" spellcheck="false" [value]="0" name="yup" [(ngModel)]="yesNo"> Nope sorry I can't make it.
       </span>
     </div>
-    <div class="email"><span class="label">EMAIL:</span><span><input type="text" id="email" [(ngModel)]="email" class="rsvp-input" /></span></div>
+    <div class="email"><span class="label">EMAIL:</span><span><input spellcheck="true" type="text" id="email" [(ngModel)]="email" class="rsvp-input" /></span></div>
+    <div class="welcome">
+        <span class="label">Dietary Restrictions? Special Needs? What are you bringing?</span>
+        <textarea [(ngModel)]="comments" spellcheck="false" rows="3" class="comments"></textarea>
+      </div>
     <div class="control">
       <div class="rsvp-button" (click)="onSendMail()" title="Please Complete Name and Email Fields" [class.disabled]="!validForm()">Submit</div>
       <div class="rsvp-button" (click)="reset()">Reset</div>

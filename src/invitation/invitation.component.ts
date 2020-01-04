@@ -12,6 +12,10 @@ export class InvitationComponent implements OnInit {
     window.open("https://goo.gl/maps/tRiYYQoCqC46dSNn9");
 
   }
+  public nav(url:string):void{
+    window.open(url);
+
+  }
   ngOnInit() {
 
     console.log(this.deviceService);

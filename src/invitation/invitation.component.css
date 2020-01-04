@@ -55,6 +55,8 @@
     justify-content: center; 
     font-family: bedoni-italic;
     font-size:15px;
+
+    margin-bottom: 10px; 
 }
 .rsvp input{
     width:200px;
@@ -69,13 +71,13 @@
     border-color: lightgray;
     display: flex;
     justify-content: center; 
-    width: 150px;
+    width: 210px;
     transform: background-color .5s;
     border-radius: 12px;
     height: 30px;
     line-height: 28px;
     cursor: pointer;
-    font-family: lato;  
+    font-family: lato; 
 }
 
 .real-deal{
@@ -147,7 +149,9 @@
 
 .food{
     display: flex;
-    justify-content: center; 
+    flex-direction: column; 
+    justify-content: baseline; 
+    
     font-family: bedoni-italic;
     font-size:14px; 
     font-style: italic;
@@ -164,7 +168,7 @@
 .food span{
     margin-top: 15px;
     display: inline-block;
-    width: 200px;
+    width: 100%;
     text-align: center;
 
 }
