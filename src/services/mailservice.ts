@@ -16,6 +16,6 @@ export class MailService {
     comments:string, 
     numGuests:number, 
     name:string): Observable<any[]> {
-    return this.http.get<any[]>(`${this.baseUrl}/sendmail?Email=${email}&Comments=${comments}&RSVP=${rsvp}&NumGuests=${numGuests}&Name=${name}&AppID=89y7`);
+    return this.http.get<any[]>(`${this.baseUrl}/dorsvp?Email=${email}&Comments=${comments}&RSVP=${rsvp}&NumGuests=${numGuests}&Name=${name}&appid=89y7`);
   }  
 }

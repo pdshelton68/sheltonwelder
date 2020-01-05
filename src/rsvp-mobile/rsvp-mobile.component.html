@@ -13,7 +13,7 @@
   <div class="welcome">WE CAN'T WAIT TO SEE YOU!</div>
   <div class="welcome" style="margin-bottom:18px">PLEASE RESPOND BY JANUARY 22ND, 2020</div>
   <div class="welcome" style="margin-bottom:5px">
-    <span class="label">NAME:</span><input type="text" id="name" class="rsvp-input" [(ngModel)]="name" />
+    <span class="label">NAME:</span><input type="text" id="name" class="rsvp-input" [(ngModel)]="name" maxlength="512" />
   </div>
   <div class="welcome" style="margin-bottom:10px"><span class="label"># OF GUESTS:</span><input type="number" id="num-guests" class="rsvp-input" style="width:50px" [(ngModel)]="numGuests" /></div>
   <div class="yes-no" style="margin-bottom:10px;">
@@ -24,7 +24,7 @@
       <input type="radio" [value]="0" name="yup" [(ngModel)]="yesNo"> Nope sorry I can't make it.
     </span>
   </div>
-  <div class="email"><span class="label">EMAIL:</span><span><input type="text" id="email" [(ngModel)]="email" class="rsvp-input" /></span></div>
+  <div class="email"><span class="label">EMAIL:</span><span><input type="text" id="email" [(ngModel)]="email" maxlength="512" class="rsvp-input" /></span></div>
   
   <div class="welcome" style="margin-top:20px !important">
       <span class="label" style="width:80%;">Dietary Restrictions? Special Needs? What are you bringing?</span>
@@ -32,7 +32,7 @@
   </div>
   <div class="welcome">
 
-      <textarea [(ngModel)]="comments" spellcheck="false" rows="4" class="comments"></textarea>
+      <textarea [(ngModel)]="comments" spellcheck="false" rows="4" class="comments" maxlength="1024"></textarea>
     </div>
   <div class="control">
     <div class="rsvp-button" (click)="onSendMail()" title="Please Complete Name and Email Fields" [class.disabled]="!validForm()">Submit</div>
